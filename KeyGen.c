@@ -354,3 +354,28 @@ void KeyGenFree(KeyCtx *ctx)
         free(ctx);
     }
 }
+
+// int main()
+// {
+//     KeyCtx *ctx = KeyGenInit("Z000", "zzzz");
+//     if (ctx == NULL)
+//     {
+//         printf("CTX == NULL !!!\n");
+//         return -1;
+//     }
+
+//     char *key = "";
+//     while (key != NULL)
+//     {
+//         key = KeyGenRound_a(ctx);
+//         // key = KeyGenRound_A(ctx);
+//         // key = KeyGenRound_0(ctx);
+//         // key = KeyGenRound_a0(ctx);
+//         // key = KeyGenRound_A0(ctx);
+//         // key = KeyGenRound_aA(ctx);
+//         // key = KeyGenRound_aA0(ctx);
+//         printf("%s\n", key);
+//     }
+//     system("pause");
+//     return 0;
+// }
